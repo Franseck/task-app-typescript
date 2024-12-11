@@ -1,11 +1,12 @@
 import { Container } from "@mui/material";
-import Main from "./Main";
+import Main from "./components/Main";
+
 
 
 function App() {
   return (
     <Container>
-    <Main/>
+<Main/>
    </Container>
   );
 }

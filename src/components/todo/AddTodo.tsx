@@ -2,15 +2,20 @@ import { Box, Button, Container, TextField } from '@mui/material'
 import { useState } from 'react';
 import { IoIosSave } from "react-icons/io";
 
-const AddTodo = () => {
+
+interface AddTodo{
+  addTodo : (task:string) => Promise<void>
+}
+
+const AddTodo = ({addTodo}:AddTodo) => {
 const [task, setTask] = useState<String>("");
 const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>setTask(e.target.value)
 
 const handleSubmit =(e: React.FormEvent<HTMLFormElement>)=>{
-    e.preventDefault()
+    e.preventDefault();
     console.log(task)
 
-    setTask("")
+    setTask("");
 
 }
   return (
