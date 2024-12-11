@@ -7,7 +7,7 @@ import TodoList from "../components/todo/TodoList";
 import { notify, SweetIcon } from "../helper/sweetAlerts";
 
 
-const url = "https://634ac3fc5df952851418480f.mockapi.io/api/todos";
+const url = "https://6759e949099e3090dbe34d4c.mockapi.io/seckapi/todo";
 
 const Main = () => {
 

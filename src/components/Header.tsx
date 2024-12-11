@@ -4,10 +4,10 @@ import logo from "../assets/Logo.png"
 
 const Header = () => {
   return (
-    <div>
+    <div >
    <Typography color="error" align="center" variant="h2" component="h1">
     Task App with Typescript
-    <img src={logo} alt="" />
+    <img  src={logo} alt="" />
    </Typography>
    </div>
   )
